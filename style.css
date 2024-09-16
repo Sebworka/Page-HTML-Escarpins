@@ -1,0 +1,400 @@
+/* ///////////////////////HEADER//////////////////////////// */
+
+@font-face {
+  font-family: 'courgetteregular';
+  src: url('../font/courgette/webfontkit-20240626-074706/') format('woff2'),
+       url('../font/courgette/webfontkit-20240626-074706/courgette-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+
+}
+@font-face {
+  font-family: 'pt_sans_narrowregular';
+  src: url('../font/webfontkit-20240625-025331/') format('woff2'),
+       url('../font/webfontkit-20240625-025331/ptsansnarrow-regular-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  }
+
+  .courgette-regular {
+    font-family: "Courgette", cursive;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
+
+.topbar{
+    background-color: black;
+    color: aliceblue;
+    text-align: center;
+    padding: 10px;
+}
+
+  main{
+    max-width: 70%;
+    margin: auto;
+  }
+
+  main section{
+    margin-top: 40px;
+  }
+
+ 
+  body{
+    background-color: rgb(195, 184, 184);
+    font-family: 'pt_sans_narrowregular';
+  }
+  
+header{
+  background-color: #F6D4F5 ;}
+
+header .container{
+  margin: auto;
+  max-width: 70%;
+}
+
+/* //////////////////// BARRE DE NAVIGATION ////////////////////////// */
+  nav{
+    display: flex;
+    gap: 70px;
+    justify-content: center;
+    flex-direction: row;
+    }
+
+  nav a{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    text-decoration: none;
+  padding: 20px;
+  flex-basis: 20%;
+}
+
+nav a:hover {
+  background-color: rgb(53, 50, 50);
+  color: white;
+  transition: all 0.1s ease 0s;
+}
+
+/* //////////////////////// LOGO PANIER ////////////////////// */
+    .panier {
+    float: right;
+    margin: 30px 30px
+    }
+
+    .panier i{
+      font-size: 2em;
+      color: blueviolet;
+      margin-top: 20px;
+      margin-left: 10px;
+    }
+
+.left {
+float: left;
+    }
+/* ///////////////////////////// SLIDER ///////////////////////////////// */
+    #slider{
+      padding: 20px;
+      background-color: white;
+      box-shadow: 9px 9px 10px
+      
+    }
+    #slider img {
+      max-width: 100%;
+  }
+
+  main section>h2 {
+    position: absolute;
+    font-weight: bold;
+    text-align: left;
+    display: inline-block;
+    margin-top: 1.3em;
+    background-color: rgba(246, 212, 245, 0.8);
+}
+
+h2>span {
+    font-weight: lighter !important;
+}
+
+#slider {
+  transition: opacity 0.2s ease;
+}
+
+#slider:hover {
+  opacity: 0.5;
+}
+
+    /* ////////id=select//////// CHOISSISSEZ VOS ESCARPINS ///////////////// */
+  #select{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    padding: 10px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    transition: 0,3s ease;
+    background-color: white;
+    box-shadow: 9px 9px 10px
+  }
+
+  #select h3{
+    font-family: 'Courgette', cursive;
+    font-weight: normal;
+  }
+
+  #select h1{
+    flex: 1 100%;
+    font-family: 'Courgette', cursive;
+    font-weight: normal;
+  
+  }
+  #select {
+    text-align: left;
+  }
+
+#select .escarpin {
+    display: inline-block; 
+    margin: 10px;
+    transition: opacity 0.2s ease; 
+  }
+
+#select .escarpin:hover {
+    opacity: 0.5; 
+  }
+
+  
+
+/* //////////////Section id=news////NEW - BEST - CRUSH//////////////////////// */
+
+#news{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+  margin-bottom: 17px;
+  }
+
+  #new, #best, #crush h3, small{
+    font-family: 'Great Vibes', cursive;
+    font-weight: normal;
+  }
+
+#new h2{
+  background-color: rgb(229, 98, 179);
+  color: white;
+  text-align: left;
+  padding: 5px;
+  font-family: "Courgette", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
+#new, #best, #crush {
+  background-color: white ;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 9px 9px 10px
+  
+}
+
+#best h2{
+  background-color:rgb(120, 214, 26);
+  text-align: left;
+  padding: 5px;
+  font-family: "Courgette", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+}
+
+#crush h2{
+  background-color: rgb(100, 100, 222);
+  text-align: left;
+  padding: 5px;
+  font-family: "Courgette", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+}
+
+
+#news article{
+   border: 10px solid white
+  /* padding: 10px; */
+} 
+
+#news article img{
+  max-width: 100%;
+  object-fit: scale-down;
+  }
+
+  #new, #best, #crush {
+    transition: opacity 0.2s ease;
+}
+
+
+#new:hover, #best:hover, #crush:hover {
+    opacity: 0.5;
+}
+
+
+/* //////////FOOTER  id=info///////////////////////////////////////////////////// */
+#info{
+  background-color: #e969e5;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20px;
+  
+}
+
+#info article {
+  display: inline-block;
+  margin: 10px;
+  text-align: center;
+}
+
+#info article i,
+#info article small {
+  transition: opacity 0.2s ease;
+}
+
+#info article:hover i,
+#info article:hover small {
+  opacity: 0.5;
+  color: white;
+  cursor: grab;
+}
+
+#info {
+  text-align: center; 
+}
+
+#info article {
+  display: inline-block; 
+  text-align: center; 
+  vertical-align: top;
+}
+
+#info article i {
+  display: block; 
+  font-size: 2em; 
+  margin-bottom: 5px;
+}
+
+#info article small {
+  display: block; 
+  }
+
+/* ///////////////////id= bottombar////////////////////// */
+
+  #bottombar{
+    background-color: #ecbaea;
+      opacity: 0.8;
+      display: flex;
+      justify-content: space-around;
+      
+      }
+  
+  #bottombar ul{
+    list-style-type: none;
+    padding: 0;
+    
+  }
+
+/* ////////////////////MEDIA QUERY///////////////// */
+
+@media screen and (max-width:1096px)
+{
+
+   header nav {
+
+       flex-direction: column;
+   }
+
+   .panier p,
+   .panier i {
+       display: none;
+      }
+
+   header .container a {
+       display: block;
+       text-align: center;
+   }
+   #slider>h2 {
+       position: relative;
+       top: 0px;
+   
+   }
+   
+
+   #select {
+flex-direction: column;
+
+       justify-content: space-around;
+       align-items: center;
+       flex-wrap: wrap;
+
+   }
+
+   #news {
+       flex-direction: column;
+       justify-content: space-around;
+       flex-wrap: wrap;
+       border: 1px solid rgb(208, 0, 255);
+
+   }
+
+   #info {
+    flex-direction: column;
+    align-items: center;
+}
+
+#info article {
+    width: 100%;
+    max-width: 300px; 
+    margin: 10px 0;
+}
+
+  
+   
+
+   #bottombar {
+       display: flex;
+       flex-direction: column;
+       flex-wrap: nowrap;
+       justify-content: space-around;
+       align-items: center;
+      
+   }
+
+   }
+
+
+    
+  
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+
+
+
+
+
+    
+
+ 
+  
+
